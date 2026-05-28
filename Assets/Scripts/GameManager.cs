@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         if (gameOver) return;
         gameOver = true;
 
-        Debug.Log("YOU LOSE — detected too long!");
+        Debug.Log("YOU LOSE - detected too long!");
         if (losePanel) losePanel.SetActive(true);
         Time.timeScale = 0f;
     }

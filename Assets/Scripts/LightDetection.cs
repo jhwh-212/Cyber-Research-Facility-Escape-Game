@@ -45,7 +45,7 @@ public class LightDetection : MonoBehaviour
         isDetected = true;
         detectionTimer += Time.deltaTime;
 
-        if (detectionTimer >= detectionTime)
+        if (detectionTimer >= detectionTime && GameManager.Instance != null)
             GameManager.Instance.Lose();
     }
 
